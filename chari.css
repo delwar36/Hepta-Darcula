@@ -1,0 +1,101 @@
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,.6);
+  -webkit-animation-name: fadedIn;
+  -webkit-animation-duration: 1s;
+  animation-name: fadedIn;
+  animation-duration: 2s;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  width: 40%;
+  border-radius: 2px;
+  margin: 20px auto;
+}
+
+
+.close {
+  color: gray;
+  float: right;
+  margin: -7px 8px 0px 0px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+	text-align: center;
+	padding: 30px 100px 10px 100px;
+  	color: red;
+  	font-weight: bold;
+}
+
+.modal-body {padding: 2px 30px 10px 60px;}
+
+.modal-header p{
+	text-align: center;
+	font-size: 12px;
+	color: gray;
+	font-weight: normal;
+	padding: 10px 50px 0px 50px;
+}
+
+.modal-body p{
+	text-align: left;
+	font-size: 12px;
+	color: black;
+	margin-bottom: -10px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.modal-body label{
+	font-weight: bolder;
+} 
+
+.butn{
+	padding: 10px 20px;
+	text-transform: capitalize;
+}
+
+#org{
+	width: 95%;
+}
+
+
+.modal-body input {
+	margin-right: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 45%;
+	height: 30px;
+	color: black;
+	display: inline;
+}
+
+
+@-webkit-keyframes fadedIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadedIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
